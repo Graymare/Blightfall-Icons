@@ -1,0 +1,33 @@
+name: Missing Mob Icon
+description: Request an icon for a missing mob in the Blightfall resource pack
+title: "[Mob Icon] "
+labels:
+  - mob-icon
+
+body:
+  - type: input
+    id: mob-name
+    attributes:
+      label: Mob Name
+      description: The in-game name of the mob
+      placeholder: "Example: Tainted Cow"
+    validations:
+      required: true
+
+  - type: input
+    id: mob-class
+    attributes:
+      label: Mob Class Name
+      description: Full Java class name of the mob
+      placeholder: "mod.package.EntityMobName"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes (optional)
+      description: Any extra information that might help (variants, behavior, screenshots, etc.)
+      placeholder: "Optional"
+    validations:
+      required: false
